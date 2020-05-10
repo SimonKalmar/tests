@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YaddaYaddaYadda</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="images/yadda-normal.png" alt=""></div>
+        <div class="navmiddle">
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="mainfront">
+        <div class="loginboxfront">
+          <div class="loginmentions">
+            <div class="loginbox">
+              <h2>Login</h2>
+              <form action="/user/login" method="post">
+                <label for="email">Email:</label><br/>
+                <input type="email" placeholder='name@email.com' name='email' value=`${ email ? email: '' }`><br/>
+                <label for="pw">Password:</label><br/>
+                <input type='password' name='password' value=`${ password ? password: '' }`><br/>
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>

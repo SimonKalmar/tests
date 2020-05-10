@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YaddaYaddaYadda</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="images/yadda-normal.png" alt=""></div>
+        <div class="profilepic">
+          <a href="#"><img src="images/profile.jpg" alt=""></a>
+        </div>
+        <div class="navmiddle">
+          <ul>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainpage">
+      <section class="profilementions">
+        <div class="profilebox">
+          <div class="pPicture"><img src="images/placeholder.jpg" /></div>
+          <div class="profileName">
+            <h2>Bailey Johnson</h2>
+            <h3>@baileydrinks</h3>
+          </div>
+          <div class="followingfollowers">
+            <div class="following">
+              <h4>Following</h4>
+              <h5>731</h5>
+            </div>
+            <div class="followers">
+              <h4>Followers</h4>
+              <h5>121</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="settings">
+        <h1>General Settings</h1>
+        <div class="settingsbox">
+          <h2>Theme</h2>
+          <form class="" action="/theme" method="post">
+            <input type="radio" id="Dark" name="theme" value="dark">
+            <label for="dark">Dark</label>
+            <input type="radio" id="light" name="theme" value="light">
+            <label for="light">Light</label><br/>
+            <button type="submit" name="button">Confirm</button>
+          </form>
+        </div>
+
+        <div class="settingsbox">
+          <h2>Name</h2>
+          <form class="" action="/name" method="post">
+            <h3>Firstname</h3>
+            <input type="text" name="firstname" placeholder="Enter your firstname"><br/>
+            <h3>Lastname</h3>
+            <input type="text" name="lastname" placeholder="Enter your lastname"><br/>
+            <button type="submit" name="button">Confirm</button>
+          </form>
+        </div>
+
+        <div class="settingsbox">
+          <h2>Password</h2>
+          <form class="" action="/password" method="post">
+            <h3>Old password</h3>
+            <input type="password" name="opassword" placeholder="Enter your old password"><br/>
+            <h3>New password</h3>
+            <input type="password" name="npassword" placeholder="Enter your new password"><br/>
+            <h3>Confirm new password</h3>
+            <input type="password" name="cpassword" placeholder="Confirm your new password"><br/>
+            <button type="submit" name="button">Confirm</button>
+          </form>
+        </div>
+
+        <div class="settingsbox">
+          <h2>Email</h2>
+          <form class="" action="/email" method="post">
+            <h3>Old email</h3>
+            <input type="text" name="oemail" placeholder="Enter your old email"><br/>
+            <h3>New email</h3>
+            <input type="text" name="nemail" placeholder="Enter your new email"><br/>
+            <h3>Confirm new email</h3>
+            <input type="text" name="cemail" placeholder="Confirm your new email"><br/>
+            <button type="submit" name="button">Confirm</button>
+          </form>
+        </div>
+
+        <div class="settingsbox">
+          <h2>Profile picture</h2>
+          <form class="" action="/profilepicture" method="post">
+            <label for="myfile">Select a file:</label><br/>
+            <input type="file" id="myfile" name="myfile"><br>
+            <button type="submit" name="button">Confirm</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
